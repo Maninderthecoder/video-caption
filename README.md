@@ -2,9 +2,16 @@
 
 A professional, feature-rich web application for adding precise captions to videos with advanced timing controls and export capabilities. Built with Next.js 15, React 19, and Tailwind CSS.
 
+## 🚀 Live Demo
+
+**[🌐 Try Video Caption Studio Live](https://video-caption-ochre.vercel.app/)**
+
+Experience the full functionality of the application with the live demo deployed on Vercel. Load videos, add captions, and download professional subtitle files instantly!
+
 ![Video Caption Studio](https://img.shields.io/badge/Next.js-15.3.3-black?style=for-the-badge&logo=next.js)
 ![React](https://img.shields.io/badge/React-19.0.0-blue?style=for-the-badge&logo=react)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.0-06B6D4?style=for-the-badge&logo=tailwindcss)
+![Live Demo](https://img.shields.io/badge/Live%20Demo-Available-brightgreen?style=for-the-badge&logo=vercel)
 
 ## ✨ Key Features
 
@@ -47,7 +54,15 @@ A professional, feature-rich web application for adding precise captions to vide
 
 ## 🚀 Quick Start
 
-### Prerequisites
+### 🌐 Try the Live Demo
+
+**[Launch Video Caption Studio →](https://video-caption-ochre.vercel.app/)**
+
+No installation required! Try all features instantly in your browser.
+
+### 💻 Local Development
+
+#### Prerequisites
 
 - Node.js 18.0 or higher
 - npm or yarn package manager
