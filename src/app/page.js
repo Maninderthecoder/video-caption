@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { FilmIcon, LinkIcon, SparklesIcon, ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline';
 import VideoPlayer from '../components/VideoPlayer';
 import CaptionEditor from '../components/CaptionEditor';
+import VideoDownloader from '../components/VideoDownloader';
 
 export default function Home() {
   // State for video URL input
@@ -186,6 +187,12 @@ export default function Home() {
                     </div>
                   </li>
                   <li className="flex items-start">
+                    <span className="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs mr-3 mt-0.5 flex-shrink-0 font-semibold">5</span>
+                    <div>
+                      <strong>Download:</strong> Export your captions as SRT/VTT files or create a video with burned-in captions for permanent embedding.
+                    </div>
+                  </li>
+                  <li className="flex items-start">
                     <span className="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs mr-3 mt-0.5 flex-shrink-0 font-semibold">💡</span>
                     <div>
                       <strong>Pro Tips:</strong> Captions cannot overlap in time. Drag the red progress bar for smooth video navigation. The caption list scrolls automatically after 5 entries.
@@ -290,6 +297,13 @@ export default function Home() {
             <CaptionEditor
               captions={captions}
               onCaptionsChange={handleCaptionsChange}
+              videoDuration={videoDuration}
+            />
+
+            {/* Video Downloader */}
+            <VideoDownloader
+              videoUrl={currentVideoUrl}
+              captions={captions}
               videoDuration={videoDuration}
             />
 

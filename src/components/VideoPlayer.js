@@ -177,7 +177,7 @@ export default function VideoPlayer({ videoUrl, captions }) {
                 {/* Caption Overlay */}
                 {currentCaption && (
                     <div className="absolute bottom-16 left-4 right-4 flex justify-center">
-                        <div className="bg-black bg-opacity-80 text-white px-4 py-2 rounded-lg text-center max-w-full">
+                        <div className="bg-black/50 text-white px-4 py-2 rounded-lg text-center max-w-full">
                             <p className="text-sm md:text-base font-medium leading-relaxed">
                                 {currentCaption}
                             </p>
